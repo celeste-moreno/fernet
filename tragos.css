@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: #323232;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    color: white;
+    font-size: 2em;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: whitesmoke;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin-top: 100px;
+}
+
+.card .card-landing{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 10px #000;
+    background: linear-gradient(transparent 80%, #000), var(--i);
+    background-position: center;
+    background-size: cover;
+    z-index: 100;
+}
+
+.card .card-landing h6{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    font-size: 25px;
+    color: white;
+}
+
+.card .card-info{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    padding: 15px;
+    background: black;
+    z-index: 90;
+    box-shadow: 0 5px 10px #000;
+    transition: -5s;
+}
+
+.card:hover .card-info{
+    left: 100%;
+}
+
+.card-info .lista{
+    padding: 10px 15px;
+}
+
+.card-info .lista li{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.card-info .lista p{
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+@media(max-width:991px){
+    .card{
+        width: 180px;
+        height: 250px;
+    }
+    .card .card-landing h6{
+        position: absolute;
+        font-size: 10px;
+        color: white;
+    }
+    .card-info .lista li{
+        font-size: 9px;
+        margin-bottom: 2px;
+        color: white;
+    }
+    .card-info .lista p{
+        font-size: 9px;
+        color: white;
+        text-transform: uppercase;
+    }
+}

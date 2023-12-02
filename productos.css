@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img{
+    max-width: 100%;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    background: whitesmoke;
+    padding: 70px 0;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #111111;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: blueviolet;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.submenu{
+    position: relative;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color: #4c405074;
+    padding: 20px;
+    min-width: 400px;
+}
+
+table{
+    width: 100%;
+}
+
+th, td{
+    color: #ffffff;
+}
+
+.borrar{
+    background-color: greenyellow;
+    border-radius: 50%;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+p{
+    color: #0000004b;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn-3{
+    display: inline-block;
+    padding: 10px 10px;
+    color: blueviolet;
+    border: 2px solid blueviolet;
+    text-transform: capitalize;
+    border-radius: 15px;
+}
+
+.btn-3:hover{
+    color: #ffffff;
+    background-color: #111111;
+}
+
+.header-img{
+    flex-basis: 60%;
+}
+
+.oferts{
+    padding: 100px 0;
+}
+
+h2{
+    font-size: 40px;
+    line-height: 1;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.oferts-content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.ofert-1{
+    flex-basis: calc(10% - 10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 25px;
+    text-align: center;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.ofert-1 img{
+    width: 130px;
+    height: 170px;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-size: 20px;
+    line-height: 1;
+    color: #111111;
+    margin-bottom: 10px;
+}
+
+.product-txt{
+    margin-bottom: 10px;
+}
+
+.precio{
+    color: chocolate;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.btn-2{
+    display: inline-block;
+    padding: 8px 30px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+}
+
+.promotion{
+    padding: 80px 0;
+    background-color: #f7f7f7f7;
+}
+
+.promotion-content{
+    display: flex;
+}
+
+.promotion-txt{
+    flex-basis: 50%;
+}
+
+.promotion-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.promotion-img img{
+    width: 100px;
+}
+
+
+/*-----------------------------------------------------------RESPONSIVE--------------------------------------------------*/
+@media(max-width:991px){
+    .menu{
+        padding: 20px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        background-color: #4c405074;
+        display: none;
+    }
+    .menu .navbar ul li{
+        width: 100%
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .menu .navbar ul li a:hover{
+        color: #ffffff;
+    }
+    .oferts{
+        padding: 30px;
+    }
+    .oferts-content{
+        flex-direction: column;
+    }
+    .ofert-1{
+        margin-bottom: 30px;
+    }
+    .promotion{
+        padding: 30px;
+    }
+    .promotion-content{
+        flex-direction: column;
+        text-align: center;
+    }
+    .promotion-txt{
+        margin-bottom: 25px;
+    }
+    .promotion-img img{
+        width: 100px;
+    }
+    .footer{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+}

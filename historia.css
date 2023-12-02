@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2{
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
+    margin: 30px;
+}
+
+h4{
+    font-size: 2em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(111, 21, 196);
+    margin-left: 60px;
+}
+
+header{
+    display: flex;
+    min-height: 70px;
+    background-color: #323232;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    color: white;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#historia .contenedor{
+    display: flex;
+    justify-content: center;
+}
+
+#historia .texto{
+    margin-top: 200px;
+    width: 50%;
+    font-size: 19px;
+    max-width: 600px;
+    text-align: initial;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#historia .img-contenedor{
+    margin-top: 200px;
+}
+
+footer{
+    display: flex;
+    height: 20px;
+    background-color: #323232;
+    position: fixed;
+    color: white;
+    width: 100%;
+    bottom: 0;
+}
+
+@media(max-width:991px){
+    header{
+        margin: 30px;
+    }
+    #historia .contenedor{
+        display: flex;
+        justify-content: center;
+    }
+    #historia .textot{
+        padding: 40px 0px;
+        flex-direction: column;
+        justify-content: center;
+        display: flex;
+        text-align: initial;
+        
+    }
+    #historia .img-contenedor{
+        display: none;
+    }
+    
+
+}
